@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: rgb(34, 33, 32);
+    background: linear-gradient(90deg, rgba(34, 33, 32, 1) 0%,
+            rgba(39, 110, 213, 1) 100%);
+}
+
+
+
+.box {
+    width: 50rem;
+    background: #30336b;
+    color: #fff;
+    padding: 3rem;
+    margin: 10rem auto;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 3rem rgba(236, 230, 230, 0.1);
+}
+
+.box h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.box .input {
+    margin-bottom: 1.5rem;
+}
+
+.box .input input {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+}
+
+.box .qr-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.box .qr-footer .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    background: #6366f1;
+    color: #fff;
+    transition: all .2s ease-in;
+}
+
+.box .qr-footer .btn:hover {
+    background-color: #5b5ee4;
+}
+
+.box .qr-footer .download {
+    background: transparent;
+    border: 2px solid #6366f1;
+}
+
+.box .qr-footer .download:hover {
+    border-color: #fff;
+    background: transparent;
+}
+
+.box .qr-code {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box .qr-code img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 520px) {
+    html {
+        font-size: 60%;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 55%;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
